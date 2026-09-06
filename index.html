@@ -734,6 +734,13 @@
     .hero-overlay { padding: 36px 20px 16px; }
     .project-code-link { font-size: 0.68rem; padding: 6px 10px; gap: 4px; }
   }
+  @media (max-width: 900px) and (prefers-reduced-motion: no-preference) {
+    .project-code-link .pcl-track { animation: pcl-marquee 9s linear infinite; }
+    @keyframes pcl-marquee {
+      0%, 8% { transform: translateX(100%); }
+      92%, 100% { transform: translateX(-100%); }
+    }
+  }
 
   .carousel-nav { display: flex; justify-content: center; gap: 12px; margin-top: 20px; }
   .carousel-arrow {
@@ -789,6 +796,7 @@
     box-sizing: border-box;
   }
   .project-code-link:hover { background: var(--accent); color: var(--accent-ink); }
+  .project-code-link .pcl-track { display: inline-block; white-space: nowrap; }
   .project-hero-shot img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 0; border: 3px solid var(--accent); background: #0d0d0d; }
   /* Match each screenshot's real aspect ratio so it fills the frame with no
      letterboxing instead of stretching a shared 4:3 box around a wider image. */
@@ -1251,7 +1259,7 @@
         <div class="hero-overlay"><h3 class="project-title">ConnectedLife V2.0, Navig8 AI Digital Health Monitor</h3></div>
       </div>
       <div class="project-meta">Powered by advanced AI, shaped by Google AI and ConnectedLife's in-house team</div>
-      <a class="project-code-link" href="https://github.com/sapprotim/Playwright-With_POM_BDD" target="_blank" rel="noopener">▶ Sample automation code (Playwright + POM + BDD) ↗</a>
+      <a class="project-code-link" href="https://github.com/sapprotim/Playwright-With_POM_BDD" target="_blank" rel="noopener"><span class="pcl-track">▶ Sample automation code (Playwright + POM + BDD) ↗</span></a>
       <p class="project-lede">Navig8 AI connects wearables, lab results, face scans, and lifestyle metrics into one intelligent system, tracking 70+ biomarkers on a single dashboard. AI insights, validated by medical experts, are turned into personalised plans and nudges via a companion app, helping users catch health risks early and build lasting routines.</p>
       <div class="project-details" id="details-cl" hidden>
       <p>I was involved across the full lifecycle, from reviewing wireframes with the design team to final delivery. I ran manual testing throughout the build, then introduced Playwright (web) and Appium (mobile) automation once development hit ~70%, which became my primary focus as the project matured. I owned Jira test management, led bug triage, sent weekly QA status updates, and set up CI/CD so every build auto-triggers the full suite and generates a report.</p>
@@ -1289,7 +1297,7 @@
         <div class="hero-overlay"><h3 class="project-title">HealthTrack SG</h3></div>
       </div>
       <div class="project-meta">Powered by Singapore's <a href="https://www.hpb.gov.sg/healthy-living/healthtrack-sg/" target="_blank" rel="noopener">Health Promotion Board</a>, in partnership with Google, ConnectedLife, and Fullerton Health</div>
-      <a class="project-code-link" href="https://github.com/sapprotim/Playwright_With_POM" target="_blank" rel="noopener">▶ Sample automation code (Playwright + POM) ↗</a>
+      <a class="project-code-link" href="https://github.com/sapprotim/Playwright_With_POM" target="_blank" rel="noopener"><span class="pcl-track">▶ Sample automation code (Playwright + POM) ↗</span></a>
       <p class="project-lede">HealthTrack SG is a national digital health programme run by Singapore's Health Promotion Board, helping residents manage or reduce their risk of chronic conditions by combining wearable data, clinical records, and lifestyle insights into a single wellness score. The platform tracks 52+ biomarkers with real-time alerts and notification reminders, forming part of a broader national initiative to deliver person-centric, data-driven preventive health.</p>
       <div class="project-details" id="details-hts" hidden>
       <p>I worked on QA for the platform end to end, from writing manual test cases against the product design, to testing the web app, to building out automation, API, and performance test coverage.</p>
@@ -1329,7 +1337,7 @@
         <div class="hero-overlay"><h3 class="project-title">Alexandra Hospital</h3></div>
       </div>
       <div class="project-meta">Public hospital under Singapore's National University Health System</div>
-      <a class="project-code-link" href="https://github.com/sapprotim/Selenium_Automation_Testcase" target="_blank" rel="noopener">▶ Sample automation code (Selenium) ↗</a>
+      <a class="project-code-link" href="https://github.com/sapprotim/Selenium_Automation_Testcase" target="_blank" rel="noopener"><span class="pcl-track">▶ Sample automation code (Selenium) ↗</span></a>
       <p class="project-lede">Alexandra Hospital's application spans both mobile and web, and my work here was weighted heavily toward manual testing, walking through flows by hand, logging defects, and verifying fixes. I also built out a layer of automation for the web application using Selenium to cover key regression checks.</p>
       <div class="project-details" id="details-ah" hidden>
       <p>ConnectedLife's unique combination of AI capabilities and human expertise sets them apart in the digital health space. Their responsiveness and pioneering approach have made a tangible difference to this work, seen not just as a vendor, but as a long-term partner in driving impactful, technology-enabled care to Alexandra Hospital and its patients.</p>
