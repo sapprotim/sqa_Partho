@@ -768,6 +768,21 @@
     text-justify: inter-word;
   }
   .project-meta a { color: inherit; font-weight: 700; text-decoration: underline; }
+  .project-code-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 100px;
+    padding: 6px 12px;
+    margin-bottom: 16px;
+    text-decoration: none;
+  }
+  .project-code-link:hover { background: var(--accent); color: var(--accent-ink); }
   .project-hero-shot img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 0; border: 3px solid var(--accent); background: #0d0d0d; }
   /* Match each screenshot's real aspect ratio so it fills the frame with no
      letterboxing instead of stretching a shared 4:3 box around a wider image. */
@@ -1267,6 +1282,7 @@
         <div class="hero-overlay"><h3 class="project-title">HealthTrack SG</h3></div>
       </div>
       <div class="project-meta">Powered by Singapore's <a href="https://www.hpb.gov.sg/healthy-living/healthtrack-sg/" target="_blank" rel="noopener">Health Promotion Board</a>, in partnership with Google, ConnectedLife, and Fullerton Health</div>
+      <a class="project-code-link" href="https://github.com/sapprotim/Playwright_With_POM" target="_blank" rel="noopener">▶ Sample automation code (Playwright + POM) ↗</a>
       <p class="project-lede">HealthTrack SG is a national digital health programme run by Singapore's Health Promotion Board, helping residents manage or reduce their risk of chronic conditions by combining wearable data, clinical records, and lifestyle insights into a single wellness score. The platform tracks 52+ biomarkers with real-time alerts and notification reminders, forming part of a broader national initiative to deliver person-centric, data-driven preventive health.</p>
       <div class="project-details" id="details-hts" hidden>
       <p>I worked on QA for the platform end to end, from writing manual test cases against the product design, to testing the web app, to building out automation, API, and performance test coverage.</p>
