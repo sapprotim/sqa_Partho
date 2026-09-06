@@ -732,6 +732,7 @@
     .project-card { padding: 24px 22px 26px; border-radius: 18px; }
     .project-hero-shot { margin: -24px -22px 22px; }
     .hero-overlay { padding: 36px 20px 16px; }
+    .project-code-link { font-size: 0.68rem; padding: 6px 10px; gap: 4px; }
   }
 
   .carousel-nav { display: flex; justify-content: center; gap: 12px; margin-top: 20px; }
@@ -781,6 +782,11 @@
     padding: 6px 12px;
     margin-bottom: 16px;
     text-decoration: none;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
   }
   .project-code-link:hover { background: var(--accent); color: var(--accent-ink); }
   .project-hero-shot img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 0; border: 3px solid var(--accent); background: #0d0d0d; }
