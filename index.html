@@ -449,6 +449,23 @@
     background: var(--surface-2);
   }
   .intro-media { position: relative; overflow: hidden; background: #0d0d0d; }
+  .video-tip {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 100px;
+    padding: 5px 12px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
   .intro-media iframe {
     position: absolute;
     inset: 0;
@@ -1123,6 +1140,7 @@
     </div>
     <div class="intro-panel">
       <div class="intro-media">
+        <span class="video-tip">⚙ Use player speed control to slow down</span>
         <iframe src="https://www.loom.com/embed/077473f64f38444d985e2e85fec4e5ed?hideEmbedTopBar=true" title="Partho Protim, introduction video" allow="fullscreen" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="intro-copy">
